@@ -1,0 +1,198 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+}
+
+
+
+
+.left {
+  width: 25vw;
+  min-width: 260px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem;
+}
+
+.nav,
+.libary {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid black;
+}
+
+.nav ul {
+  margin: 1rem;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+}
+
+.icon {
+  width: 1.6rem;
+}
+
+.libary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.lbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+.favlist{
+    border: 2px solid black;
+    max-height: 452px;
+    overflow-y: auto;
+}
+.fav{
+    border: 2px solid black;
+    margin: 0.6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    font-size: 0.8rem;
+   
+}
+.fav div{
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+
+}
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+.right{
+    border: 1px solid black;
+    width: 75vw;
+     margin: 0.5rem;
+     border-radius: 6px;
+     min-width: 400px;
+     display: flex;
+     flex-direction: column;
+     gap: 0.3rem;
+     
+
+}
+
+.sinbar{
+    border: 2px solid black;
+    display: flex;
+    gap: 0.5rem;
+    justify-content: flex-end;
+   
+  
+    
+
+}
+.log,.sign ,button{
+    margin:  0.3rem;
+    padding: 0.3rem;
+}
+.cardcontainer{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-height: 673px;
+    overflow: hidden;
+    min-height: 600px;
+    border: 2px solid black;
+}
+
+.playlist{
+    border: 2px solid black;
+
+}
+
+.card{
+    border: 2px solid black;
+    width: 12rem;
+    margin: 0.5rem;
+    max-height: 330px;
+  
+   
+    
+}
+.card img{
+    width: 11rem;
+    object-fit: contain;
+    margin: 0.3rem;
+    
+}
+.card div{
+    margin: 0.3rem;
+}
+.card h3{
+    margin: 0.3rem;
+}
+.playbar{
+    margin-top: auto;
+    display: flex;
+    border: 2px solid  black;
+
+    margin-bottom: -5px;
+    border-bottom: none;
+ 
+  
+}
+.control {
+  margin:  auto;          
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+ .time {
+  margin-left: 1rem;
+} 
+  .duration{
+    margin-right: 1rem;
+  }
+
+.sickbar{
+border: 2px solid black;
+padding-top: 2px;
+position: relative;
+
+
+}
+.circle{
+    border: 2px solid black;
+    border-radius: 200px;
+    padding: 5px;
+position: absolute;
+bottom: -6px;
+left: 2px;
+background-color: black;
+ transform: translateX(-50%);
+}

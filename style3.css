@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background-color: #121212;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #121212;
+}
+
+/* ---------------- LEFT PANEL ---------------- */
+
+.left {
+  width: 25vw;
+  min-width: 260px;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin: 0.5rem;
+  background-color: #121212;
+}
+
+.nav,
+.libary {
+  width: 100%;
+  border-radius: 6px;
+  border: 1px solid #2a2a2a;
+  background-color: #181818;
+}
+
+.nav ul {
+  margin: 1rem;
+}
+
+.nav ul li {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font-size: 1.3rem;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.libary {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.lbox {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+/* ---------------- FAV LIST ---------------- */
+
+.favlist {
+  border: 1px solid #2a2a2a;
+  max-height: 452px;
+  overflow-y: auto;
+  background-color: #181818;
+}
+
+.fav {
+  border: 1px solid #2a2a2a;
+  margin: 0.6rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.8rem;
+  color: #b3b3b3;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.fav:hover {
+  background-color: #242424;
+  cursor: pointer;
+}
+
+.fav div {
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+/* ---------------- FOOTER ---------------- */
+
+footer {
+  margin-top: auto;
+  padding: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+}
+
+footer a {
+  color: #b3b3b3;
+  text-decoration: none;
+  font-size: 0.75rem;
+}
+
+footer a:hover {
+  color: #ffffff;
+}
+
+/* ---------------- RIGHT PANEL ---------------- */
+
+.right {
+  width: 75vw;
+  margin: 0.5rem;
+  border-radius: 6px;
+  min-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  background-color: #121212;
+  border: 1px solid #2a2a2a;
+}
+
+/* ---------------- SIGN BAR ---------------- */
+
+.sinbar {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: flex-end;
+}
+
+.log,
+.sign,
+button {
+  margin: 0.3rem;
+  padding: 0.4rem 0.8rem;
+}
+
+button {
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  border-radius: 999px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.05);
+}
+
+/* ---------------- PLAYLIST / CARDS ---------------- */
+
+.playlist {
+  border: 1px solid #2a2a2a;
+  background-color: #181818;
+  padding: 0.5rem;
+}
+
+.cardcontainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 673px;
+  min-height: 600px;
+  overflow: auto;
+}
+
+.card {
+  background-color: #181818;
+  border: 1px solid #2a2a2a;
+  width: 12rem;
+  margin: 0.5rem;
+  max-height: 330px;
+  border-radius: 6px;
+}
+
+.card img {
+  width: 11rem;
+  object-fit: contain;
+  margin: 0.3rem;
+  filter: none; /* album art stays normal */
+}
+
+.card h3 {
+  margin: 0.3rem;
+  color: #ffffff;
+}
+
+.card div {
+  margin: 0.3rem;
+  color: #b3b3b3;
+}
+
+/* ---------------- PLAY BAR ---------------- */
+
+.playbar {
+  margin-top: auto;
+  display: flex;
+  border-top: 1px solid #2a2a2a;
+  background-color: #181818;
+  align-items: center;
+  padding: 0.5rem 0;
+}
+
+.control {
+  margin: auto;
+  display: flex;
+  gap: 0.8rem;
+  align-items: center;
+}
+
+.time {
+  margin-left: 1rem;
+  color: #b3b3b3;
+}
+
+.duration {
+  margin-right: 1rem;
+  color: #b3b3b3;
+}
+
+/* ---------------- SEEK BAR ---------------- */
+
+.sickbar {
+  border-top: 1px solid #2a2a2a;
+  background-color: #181818;
+  height: 6px;
+  position: relative;
+}
+
+.circle {
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #1db954;
+  transform: translateX(-50%);
+}
+
+/* ---------------- ICON INVERSION ---------------- */
+
+/* Invert all icons */
+img {
+  filter: invert(1);
+}
+
+/* Do NOT invert album art */
+.card img {
+  filter: none;
+}
